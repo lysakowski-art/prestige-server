@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "menus",
+  "info": {
+    "name": "menu"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "order": {
+      "type": "string"
+    },
+    "sub_menus": {
+      "collection": "sub-menu"
+    }
+  }
+}

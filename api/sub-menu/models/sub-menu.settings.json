@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sub_menus",
+  "info": {
+    "name": "sub_menu"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "page": {
+      "model": "page",
+      "via": "sub_menu"
+    }
+  }
+}
